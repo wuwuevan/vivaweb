@@ -1,0 +1,12 @@
+:root{--primary:#123a66;--teal:#1f9fae;--bg:#f5f8fc}
+body{background:var(--bg);color:#1f2937}
+.text-primary,.btn-outline-primary{color:var(--primary)!important}
+.btn-primary{background:linear-gradient(135deg,var(--primary),var(--teal));border:0}
+.hero{background:linear-gradient(135deg,#ffffff,#eaf4ff);box-shadow:0 14px 40px rgba(18,58,102,.08)}
+.shadow-soft{box-shadow:0 8px 30px rgba(17,24,39,.08)}
+.card{border-radius:1rem}
+.step-card{background:#fff;padding:1rem;border-radius:.8rem;border:1px solid #e6edf4;box-shadow:0 4px 16px rgba(0,0,0,.04);font-weight:600}
+.question-card{border:1px dashed #aac5de}
+.timeline-item{border-left:2px solid #c6d7ea;padding-left:12px;margin-bottom:12px}
+.nav-link:hover{color:var(--teal)!important}
+textarea.form-control:focus,.form-select:focus,.form-control:focus{border-color:#79bad0;box-shadow:0 0 0 .2rem rgba(31,159,174,.15)}

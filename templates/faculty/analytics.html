@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h3 class="mb-4">Cohort Analytics</h3>
+  <div class="row g-4">
+    <div class="col-lg-6"><div class="card border-0 shadow-soft p-4"><h6>Average Score by Topic</h6><canvas id="facultyTopic"></canvas></div></div>
+    <div class="col-lg-6"><div class="card border-0 shadow-soft p-4"><h6>Confidence Distribution</h6><canvas id="facultyConfidence"></canvas></div></div>
+    <div class="col-lg-6"><div class="card border-0 shadow-soft p-4"><h6>Usage Frequency</h6><canvas id="facultyUsage"></canvas></div></div>
+    <div class="col-lg-6"><div class="card border-0 shadow-soft p-4"><h6>Pre/Post Improvement</h6><canvas id="facultyImprove"></canvas></div></div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/faculty_charts.js') }}"></script>{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="max-width:800px">
+  <div class="card border-0 shadow-soft p-4">
+    <h3>Post-Session Reflection</h3>
+    {% if saved %}<div class="alert alert-success">Reflection saved locally for this demo session.</div>{% endif %}
+    <form method="post" class="row g-3">
+      {% for field in ['satisfaction','usefulness','confidence_improvement','anxiety_reduction','continue_intent'] %}
+      <div class="col-md-6"><label class="form-label text-capitalize">{{ field.replace('_',' ') }}</label><select class="form-select" name="{{ field }}"><option>Very low</option><option>Low</option><option selected>Moderate</option><option>High</option><option>Very high</option></select></div>
+      {% endfor %}
+      <div class="col-12"><label class="form-label">Open comments</label><textarea name="comments" class="form-control" rows="4" placeholder="What helped most in this session?"></textarea></div>
+      <div class="col-12"><button class="btn btn-primary">Submit Reflection</button></div>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{
+  "Joint arthritis": {
+    "ja1": "Osteoarthritis involves progressive cartilage degeneration, altered subchondral bone remodeling, low-grade synovial inflammation, and resultant pain, stiffness, and functional decline.",
+    "ja2": "A structured comparison should address inflammatory pattern, duration of stiffness, symmetry, systemic signs, and objective exam findings.",
+    "ja3": "First-line care prioritizes education, activity modification, weight optimization, exercise therapy, and rational pharmacologic support.",
+    "ja4": "Imaging supports diagnosis when clinical uncertainty or red flags are present; x-ray findings should be interpreted alongside symptoms."
+  },
+  "Joint replacement": {
+    "jr1": "Indications include severe pain, marked functional impairment, radiographic degeneration, and failure of conservative treatment.",
+    "jr2": "Complications include infection, thromboembolism, dislocation, and implant loosening; early recognition improves outcomes.",
+    "jr3": "Counselling should cover realistic expectations, risks, recovery timelines, rehabilitation, and shared decision-making.",
+    "jr4": "Rehabilitation is phased with pain control, early mobilization, physiotherapy milestones, and regular functional review."
+  },
+  "Sports medicine": {
+    "sm1": "Assessment combines injury mechanism, immediate symptoms, focused exam, and selective imaging for decision support.",
+    "sm2": "Tendinopathy often reflects load-related overuse while strains involve acute contractile injury; both require graded rehab.",
+    "sm3": "Return-to-play decisions integrate strength, functional tests, confidence, and risk-informed progression.",
+    "sm4": "Effective prevention includes structured warm-up, load management, sleep, nutrition, and neuromuscular conditioning."
+  },
+  "Spine problems": {
+    "sp1": "Mechanical pain is often positional and non-progressive; red flags suggest urgent pathology and warrant escalation.",
+    "sp2": "Lumbar radiculopathy management starts conservatively with analgesia, function-focused advice, and selective referral.",
+    "sp3": "Chronic back pain care emphasizes activity, self-efficacy, multidisciplinary support, and realistic functional goals.",
+    "sp4": "Surgical referral is considered for severe neurological deficits, cauda equina signs, or refractory disabling symptoms."
+  }
+}

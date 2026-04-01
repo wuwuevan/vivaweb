@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div class="card border-0 shadow-soft p-4 p-md-5 mx-auto" style="max-width:900px">
+    <h3 class="mb-4">Configure Viva Session</h3>
+    <form method="post" class="row g-3">
+      <div class="col-md-6"><label class="form-label">Discipline</label><select name="discipline" class="form-select">{% for d in disciplines %}<option>{{ d }}</option>{% endfor %}</select></div>
+      <div class="col-md-6"><label class="form-label">Topic</label><select name="topic" class="form-select">{% for t in topics %}<option>{{ t }}</option>{% endfor %}</select></div>
+      <div class="col-md-4"><label class="form-label">Difficulty</label><select name="difficulty" class="form-select"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select></div>
+      <div class="col-md-4"><label class="form-label">Question Mode</label><select name="mode" class="form-select">{% for m in modes %}<option>{{ m }}</option>{% endfor %}</select></div>
+      <div class="col-md-4"><label class="form-label"># Questions</label><input type="number" min="2" max="4" value="4" name="num_questions" class="form-control"></div>
+      <div class="col-md-6"><label class="form-label">Estimated Duration</label><select name="estimated_duration" class="form-select"><option>10 minutes</option><option selected>12 minutes</option><option>15 minutes</option></select></div>
+      <div class="col-md-6 d-flex align-items-end"><div class="form-check form-switch"><input class="form-check-input" type="checkbox" name="timer_mode" id="timer_mode"><label class="form-check-label" for="timer_mode">Enable mock timer mode</label></div></div>
+      <div class="col-12"><button class="btn btn-primary btn-lg">Begin Session</button></div>
+    </form>
+  </div>
+</div>
+{% endblock %}

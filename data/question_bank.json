@@ -1,0 +1,28 @@
+{
+  "Medicine / Orthopaedics": {
+    "Joint arthritis": [
+      {"id": "ja1", "question": "Explain the pathophysiology of osteoarthritis in a weight-bearing joint.", "keywords": ["cartilage", "subchondral bone", "inflammation", "pain", "stiffness"]},
+      {"id": "ja2", "question": "Differentiate osteoarthritis from inflammatory arthritis using history and exam clues.", "keywords": ["morning stiffness", "swelling", "symmetry", "mechanical pain", "systemic features"]},
+      {"id": "ja3", "question": "How would you structure first-line management for knee osteoarthritis?", "keywords": ["education", "weight loss", "physiotherapy", "NSAIDs", "shared decision"]},
+      {"id": "ja4", "question": "When should imaging be used in suspected joint arthritis?", "keywords": ["x-ray", "joint space narrowing", "osteophytes", "red flags", "clinical correlation"]}
+    ],
+    "Joint replacement": [
+      {"id": "jr1", "question": "What are the main indications for total hip replacement?", "keywords": ["pain", "functional limitation", "failed conservative treatment", "quality of life", "radiographic changes"]},
+      {"id": "jr2", "question": "Discuss common complications after joint replacement and early warning signs.", "keywords": ["infection", "DVT", "dislocation", "loosening", "postoperative monitoring"]},
+      {"id": "jr3", "question": "How do you counsel a patient preoperatively for knee arthroplasty?", "keywords": ["expectations", "rehabilitation", "risks", "benefits", "consent"]},
+      {"id": "jr4", "question": "Describe a postoperative rehabilitation pathway after joint replacement.", "keywords": ["mobilization", "pain control", "physiotherapy", "follow-up", "functional goals"]}
+    ],
+    "Sports medicine": [
+      {"id": "sm1", "question": "Outline an approach to acute knee injury assessment in an athlete.", "keywords": ["mechanism", "swelling", "instability", "ligament tests", "imaging"]},
+      {"id": "sm2", "question": "How do you compare tendinopathy and muscle strain in presentation and management?", "keywords": ["overuse", "load management", "rehabilitation", "eccentric exercise", "recovery timeline"]},
+      {"id": "sm3", "question": "What return-to-play criteria would you apply after ACL reconstruction?", "keywords": ["strength symmetry", "functional testing", "psychological readiness", "gradual progression", "reinjury risk"]},
+      {"id": "sm4", "question": "Discuss injury prevention strategies in competitive sport.", "keywords": ["warm-up", "neuromuscular training", "workload monitoring", "sleep", "nutrition"]}
+    ],
+    "Spine problems": [
+      {"id": "sp1", "question": "How do you clinically differentiate mechanical lower back pain from red-flag pathology?", "keywords": ["red flags", "neurological deficit", "night pain", "history", "exam"]},
+      {"id": "sp2", "question": "Describe an evidence-based approach to lumbar radiculopathy.", "keywords": ["dermatomal pain", "conservative management", "imaging indications", "analgesia", "referral"]},
+      {"id": "sp3", "question": "What advice should be given for chronic non-specific back pain?", "keywords": ["activity", "self-management", "multidisciplinary", "CBT", "goal setting"]},
+      {"id": "sp4", "question": "When is surgical referral appropriate in spine disorders?", "keywords": ["cauda equina", "progressive weakness", "failed conservative therapy", "quality of life", "specialist review"]}
+    ]
+  }
+}
