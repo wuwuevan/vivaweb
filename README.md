@@ -3,8 +3,10 @@
 AI Viva is a polished, frontend-first Flask web app for university oral-assessment practice with mock AI behavior.
 
 ## Features
-- Landing page + About + Help
-- Student flow: dashboard, setup, interactive session, results, history, analytics, reflection
+- Premium landing page + About + Help
+- Authentication demo: register/login/logout + editable personal profile
+- Student flow: dashboard, setup, interactive viva session, results, history, analytics, reflection
+- Mock LLM-style coach page for viva strategy prompts
 - Faculty flow: dashboard, cohort analytics, rubric review
 - Mock question bank, scoring, and feedback (no real AI or external APIs)
 
@@ -16,6 +18,10 @@ pip install flask
 python app.py
 ```
 Open: `http://127.0.0.1:5000`
+
+## Demo Login
+- Email: `demo@student.com`
+- Password: `demo123`
 
 ## Project structure
 - `app.py` Flask routes and mock logic

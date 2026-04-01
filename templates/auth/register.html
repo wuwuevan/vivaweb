@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="max-width:680px">
+  <div class="card border-0 shadow-soft p-4">
+    <h3>Create your AI Viva account</h3>
+    <form method="post" class="row g-3">
+      <div class="col-md-6"><label class="form-label">Name</label><input class="form-control" name="name" required></div>
+      <div class="col-md-6"><label class="form-label">Email</label><input class="form-control" name="email" type="email" required></div>
+      <div class="col-md-6"><label class="form-label">Password</label><input class="form-control" name="password" type="password" required></div>
+      <div class="col-md-6"><label class="form-label">Role</label><select class="form-select" name="role"><option value="student">Student</option><option value="faculty">Faculty</option></select></div>
+      <div class="col-md-6"><label class="form-label">Institution</label><input class="form-control" name="institution" value="University Demo Campus"></div>
+      <div class="col-md-3"><label class="form-label">Program</label><input class="form-control" name="program" value="MBBS"></div>
+      <div class="col-md-3"><label class="form-label">Year</label><input class="form-control" name="year" value="Year 4"></div>
+      <div class="col-12"><button class="btn btn-primary w-100">Register</button></div>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -4,9 +4,13 @@
   <div class="row g-4">
     <div class="col-lg-8">
       <div class="card border-0 shadow-soft p-4 mb-4">
-        <h3>Welcome back, Aarav</h3>
+        <h3>Welcome back, {{ current_user.name }}</h3>
         <p class="text-secondary">Continue building confidence for your orthopaedics viva.</p>
-        <a href="{{ url_for('student_setup') }}" class="btn btn-primary">Start New Viva</a>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="{{ url_for('student_setup') }}" class="btn btn-primary">Start New Viva</a>
+          <a href="{{ url_for('student_coach') }}" class="btn btn-outline-primary">Open AI Coach</a>
+          <a href="{{ url_for('profile') }}" class="btn btn-outline-secondary">Personal Profile</a>
+        </div>
       </div>
       <div class="card border-0 shadow-soft p-4">
         <h5>Recent Sessions</h5>
