@@ -1,0 +1,4 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container"><h3 class="mb-3">Session History</h3><div class="card border-0 shadow-soft p-3"><div class="table-responsive"><table class="table align-middle"><thead><tr><th>Date</th><th>Topic</th><th>Mode</th><th>Score</th><th>Duration</th><th>Status</th><th></th></tr></thead><tbody>{% for s in sessions %}<tr><td>{{ s.date }}</td><td>{{ s.topic }}</td><td>{{ s.mode }}</td><td>{{ s.score }}%</td><td>{{ s.duration }}</td><td><span class="badge text-bg-success">{{ s.status }}</span></td><td><a href="{{ url_for('student_results') }}" class="btn btn-sm btn-outline-primary">View details</a></td></tr>{% endfor %}</tbody></table></div></div></div>
+{% endblock %}

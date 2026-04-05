@@ -1,0 +1,11 @@
+{
+  "demo@student.com": {
+    "name": "Aarav Mehta",
+    "password": "demo123",
+    "role": "student",
+    "institution": "Metropolitan Medical University",
+    "program": "MBBS",
+    "year": "Year 4",
+    "bio": "Preparing for orthopaedics viva with focus on clinical reasoning and concise verbal responses."
+  }
+}

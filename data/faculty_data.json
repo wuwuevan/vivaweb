@@ -1,0 +1,12 @@
+{
+  "cohort_size": 64,
+  "average_score": 76,
+  "engagement_rate": 82,
+  "most_difficult_topics": ["Spine problems", "Joint replacement"],
+  "weak_areas": ["Differential diagnosis articulation", "Keyword precision", "Clinical reasoning under pressure"],
+  "recent_activity": [
+    "27 students completed a viva session in the last 24 hours",
+    "Joint arthritis remains the most practiced topic this week",
+    "Confidence scores improved by 9% compared to previous fortnight"
+  ]
+}

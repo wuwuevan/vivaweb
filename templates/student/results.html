@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h3 class="mb-4">Session Results</h3>
+  <div class="row g-3 mb-4">
+    {% for k,v in summary.items() %}<div class="col-6 col-md-4 col-lg-2"><div class="card border-0 shadow-soft p-3 text-center"><small class="text-capitalize">{{ k.replace('_',' ') }}</small><div class="h4 text-primary">{{ v }}%</div></div></div>{% endfor %}
+  </div>
+  <div class="row g-4">
+    <div class="col-lg-7">
+      <div class="card border-0 shadow-soft p-4 mb-3"><h5>Strengths</h5><ul>{% for s in answers[-1].feedback.strengths %}<li>{{ s }}</li>{% endfor %}</ul><h5>Areas to Improve</h5><ul>{% for s in answers[-1].feedback.improvements %}<li>{{ s }}</li>{% endfor %}</ul></div>
+      <div class="card border-0 shadow-soft p-4"><h5>Sample Ideal Answer</h5><p class="text-secondary">{{ answers[-1].feedback.ideal_answer }}</p></div>
+    </div>
+    <div class="col-lg-5">
+      <div class="card border-0 shadow-soft p-4 mb-3"><h6>Recommended Next Topic</h6><span class="badge text-bg-info">{{ recommended_next }}</span></div>
+      <div class="card border-0 shadow-soft p-4"><h6>Session Timeline</h6>{% for r in recap %}<div class="timeline-item"><strong>{{ r.label }}</strong><p class="small text-muted mb-1">{{ r.detail }}</p><small>{{ r.time }}</small></div>{% endfor %}</div>
+    </div>
+  </div>
+</div>
+{% endblock %}

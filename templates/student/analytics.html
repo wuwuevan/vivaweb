@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h3 class="mb-4">Progress Analytics</h3>
+  <div class="row g-4">
+    <div class="col-lg-8"><div class="card border-0 shadow-soft p-4"><h6>Score Trend</h6><canvas id="scoreTrend"></canvas></div></div>
+    <div class="col-lg-4"><div class="card border-0 shadow-soft p-4"><h6>Practice Frequency</h6><canvas id="practiceFreq"></canvas></div></div>
+    <div class="col-lg-6"><div class="card border-0 shadow-soft p-4"><h6>Performance by Topic</h6><canvas id="topicPerf"></canvas></div></div>
+    <div class="col-lg-6"><div class="card border-0 shadow-soft p-4"><h6>Confidence Trend</h6><canvas id="confTrend"></canvas></div></div>
+  </div>
+</div>
+<script>window.studentSessions = {{ sessions|tojson }};</script>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/charts.js') }}"></script>{% endblock %}

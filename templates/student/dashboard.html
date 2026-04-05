@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div class="row g-4">
+    <div class="col-lg-8">
+      <div class="card border-0 shadow-soft p-4 mb-4">
+        <h3>Welcome back, {{ current_user.name }}</h3>
+        <p class="text-secondary">Continue building confidence for your orthopaedics viva.</p>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="{{ url_for('student_setup') }}" class="btn btn-primary">Start New Viva</a>
+          <a href="{{ url_for('student_coach') }}" class="btn btn-outline-primary">Open AI Coach</a>
+          <a href="{{ url_for('profile') }}" class="btn btn-outline-secondary">Personal Profile</a>
+        </div>
+      </div>
+      <div class="card border-0 shadow-soft p-4">
+        <h5>Recent Sessions</h5>
+        <div class="table-responsive"><table class="table">
+          <thead><tr><th>Date</th><th>Topic</th><th>Mode</th><th>Score</th></tr></thead>
+          <tbody>{% for s in recent %}<tr><td>{{ s.date }}</td><td>{{ s.topic }}</td><td>{{ s.mode }}</td><td><span class="badge text-bg-primary">{{ s.score }}</span></td></tr>{% endfor %}</tbody>
+        </table></div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card border-0 shadow-soft p-4 mb-3"><h6>Average Score</h6><div class="display-6 fw-bold text-primary">{{ avg_score }}%</div></div>
+      <div class="card border-0 shadow-soft p-4 mb-3"><h6>Topic Performance</h6>{% for t in topics %}<div class="d-flex justify-content-between"><span>{{ t }}</span><span>{{ 65 + loop.index*5 }}%</span></div>{% endfor %}</div>
+      <div class="card border-0 shadow-soft p-4"><h6>Recommendations</h6><p class="small text-secondary">Focus on spine red flags and postoperative counselling language this week.</p></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

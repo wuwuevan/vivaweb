@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <h3 class="mb-4">Faculty Dashboard</h3>
+  <div class="row g-3 mb-4">
+    <div class="col-md-4"><div class="card border-0 shadow-soft p-3"><small>Cohort Size</small><div class="h3">{{ data.cohort_size }}</div></div></div>
+    <div class="col-md-4"><div class="card border-0 shadow-soft p-3"><small>Average Score</small><div class="h3">{{ data.average_score }}%</div></div></div>
+    <div class="col-md-4"><div class="card border-0 shadow-soft p-3"><small>Engagement Rate</small><div class="h3">{{ data.engagement_rate }}%</div></div></div>
+  </div>
+  <div class="row g-4">
+    <div class="col-lg-6"><div class="card border-0 shadow-soft p-4"><h6>Most Difficult Topics</h6>{% for t in data.most_difficult_topics %}<span class="badge text-bg-warning me-2">{{ t }}</span>{% endfor %}</div></div>
+    <div class="col-lg-6"><div class="card border-0 shadow-soft p-4"><h6>Common Weak Areas</h6><ul>{% for w in data.weak_areas %}<li>{{ w }}</li>{% endfor %}</ul></div></div>
+  </div>
+</div>
+{% endblock %}

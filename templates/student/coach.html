@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container" style="max-width:900px">
+  <div class="card border-0 shadow-soft p-4">
+    <h3>AI Viva Coach (Mock LLM)</h3>
+    <p class="text-secondary">Ask for viva structuring help, sample opening statements, or exam strategy.</p>
+    <form method="post" class="row g-3">
+      <div class="col-12"><textarea class="form-control" name="prompt" rows="5" placeholder="e.g., How should I answer a joint replacement complication question in 90 seconds?"></textarea></div>
+      <div class="col-12"><button class="btn btn-primary">Get Coach Feedback</button></div>
+    </form>
+    {% if reply %}
+      <div class="alert alert-info mt-4">
+        <strong>Your prompt:</strong> {{ reply.input }}<hr>
+        <strong>Coach reply:</strong> {{ reply.response }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
